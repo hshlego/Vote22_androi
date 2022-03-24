@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CandidateActivity">
+
+    <LinearLayout
+        android:id="@+id/cand_activ_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:backgroundTint="#00000000"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:minHeight="?android:attr/actionBarSize"
+                android:padding="16dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/light_gray" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/white"
+            app:tabIndicatorColor="@color/black"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabTextColor="#979797" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

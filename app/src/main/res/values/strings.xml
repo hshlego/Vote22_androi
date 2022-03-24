@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vote22</string>
+    <string name="title_home">여론조사</string>
+    <string name="title_dashboard">후보자</string>
+    <string name="title_notifications">추세선</string>
+    <string name="tab_text_1">영상</string>
+    <string name="tab_text_2">SNS</string>
+    <string name="tab_text_3">공약</string>
+    <string name="candidate_num">candidate_num</string>
+</resources>

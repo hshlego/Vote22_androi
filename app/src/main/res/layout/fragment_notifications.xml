@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment" >
+
+    <TextView
+        android:id="@+id/lines_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:text="리스트에서 항목을 선택하세요"
+        android:textColor="@color/home_fragment_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/notification_zoom_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="리스트에서 항목을 선택하세요. 줌 및 스크롤이 가능합니다"
+        android:textColor="@color/home_fragment_text"
+        android:textSize="10sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ProgressBar
+            android:id="@+id/notification_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/black" />
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"></lecho.lib.hellocharts.view.LineChartView>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="0"/>
+</LinearLayout>

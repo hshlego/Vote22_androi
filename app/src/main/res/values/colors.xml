@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="youtube_music_gray">#FF3f4042</color>
+    <color name="light_gray">#FFEEEEEE</color>
+    <color name="light_turcoise">#FF40E0D0</color>
+    <color name="dark_turcoise">#FF00868B</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="main_background">@color/white</color>
+    <color name="main_text">@color/black</color>
+    <color name="navigation_bar">@color/white</color>
+    <color name="home_fragment_text">@color/main_text</color>
+    <color name="home_recycler_view_background">@color/main_background</color>
+    <color name="home_recycler_view_text">@color/main_text</color>
+    <color name="candidate_item_underbar">@color/white</color>
+    <color name="c1_color">#FF004EA1</color>
+    <color name="c2_color">#FFe61e2b</color>
+    <color name="c3_color">#FFFFED00</color>
+    <color name="c4_color">#FFEA5504</color>
+
+</resources>

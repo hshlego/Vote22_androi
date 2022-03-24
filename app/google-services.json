@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490236990756",
+    "project_id": "electionpjt",
+    "storage_bucket": "electionpjt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490236990756:android:d0605926f07371d9764fb1",
+        "android_client_info": {
+          "package_name": "org.techtown.push.buttonnaviation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490236990756-ki0gmu9f01dj721oh09kg6c771k5dpf2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNij9SxpWuLiu_-XK5nkb5h8RXwABvIs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490236990756-ki0gmu9f01dj721oh09kg6c771k5dpf2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
