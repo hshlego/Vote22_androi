@@ -36,20 +36,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //register id for firebase
-        FirebaseMessaging.getInstance().getToken()
-                .addOnCompleteListener(new OnCompleteListener<String>() {
-                    @Override
-                    public void onComplete(@NonNull Task<String> task) {
-                        if(!task.isSuccessful()) {
-                            return;
-                        }
-                        String newToken = task.getResult();
-                        registerToken(newToken);
-                    }
-                });
-
-        //
         BottomNavigationView navView = binding.navView;
         navView.setItemIconTintList(null);
 
@@ -60,21 +46,5 @@ public class MainActivity extends AppCompatActivity {
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupWithNavController(binding.navView, navController);
-    }
-
-    private void registerToken(String newToken) {
-        TokenRetrofit tokenRetrofit = new TokenRetrofit();
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("regid", newToken);
-        tokenRetrofit.insert.insertOne(map).enqueue(new Callback<Registered>() {
-            @Override
-            public void onResponse(Call<Registered> call, Response<Registered> response) {
-                if(!response.isSuccessful()) return;
-            }
-            @Override
-            public void onFailure(Call<Registered> call, Throwable t) {
-                t.printStackTrace();
-            }
-        });
     }
 }
